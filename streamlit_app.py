@@ -42,7 +42,7 @@ else:
                 st.markdown(message["content"])
 
         # Create a chat input field to allow the user to enter a message.
-        if prompt := st.chat_input("Enter a prompt related to the uploaded image"):
+        if prompt := st.chat_input("Ask our agent about your uploaded image!"):
             # Store and display the current prompt.
             st.session_state.messages.append({"role": "user", "content": prompt})
             with st.chat_message("user"):
